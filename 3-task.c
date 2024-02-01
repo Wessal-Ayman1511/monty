@@ -1,4 +1,5 @@
 #include "monty.h"
+#define _GNU_SOURCE
 /**
  * swap - swaps
  * @stack: pointer to the head node pointer of stack

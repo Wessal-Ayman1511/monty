@@ -1,4 +1,5 @@
 #include "monty.h"
+#define _GNU_SOURCE
 /**
  * add - adds the top two elements together
  * @stack: pointer to the head node pointer of stack

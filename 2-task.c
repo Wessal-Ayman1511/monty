@@ -1,4 +1,5 @@
 #include "monty.h"
+#define _GNU_SOURCE
 /**
  * pop - removes the top element of stack
  * @s: pointer to the head node pointer of stack
