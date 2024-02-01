@@ -1,4 +1,4 @@
-#include "LIFO_FIFO.h"
+#include "monty.h"
 /**
  * freeStack - frees a list.
  * @head: head of list

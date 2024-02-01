@@ -1,4 +1,4 @@
-#include "LIFO_FIFO.h"
+#include "monty.h"
 
 /**
  * push - pushes node

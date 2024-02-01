@@ -1,4 +1,4 @@
-#include "LIFO_FIFO.h"
+#include "monty.h"
 /**
  * pop - removes the top element of stack
  * @s: pointer to the head node pointer of stack

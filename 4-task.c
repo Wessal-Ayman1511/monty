@@ -1,4 +1,4 @@
-#include "LIFO_FIFO.h"
+#include "monty.h"
 /**
  * add - adds the top two elements together
  * @stack: pointer to the head node pointer of stack

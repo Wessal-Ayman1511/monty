@@ -1,5 +1,5 @@
-#ifndef LIFO_FIFO_H
-#define LIFO_FIFO_H
+#ifndef MONTY_H
+#define MONTY_H
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,4 +1,4 @@
-#include "LIFO_FIFO.h"
+#include "monty.h"
 /**
  * swap - swaps
  * @stack: pointer to the head node pointer of stack
