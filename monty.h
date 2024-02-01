@@ -1,5 +1,5 @@
-#ifndef MONTY_H
-#define MONTY_H
+#ifndef STACKS_QUEUES
+#define STACKS_QUEUES
 
 #include <stdio.h>
 #include <stdlib.h>
