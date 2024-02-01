@@ -4,12 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <ctype.h>
 #include <stdbool.h>
-
+#include <ctype.h>
 
 
 /**
@@ -47,15 +43,16 @@ void getFunc(char *opcde, stack_t **ptrStack, int line, FILE *f);
 void accesFile(FILE *openFile);
 bool validArg(char *token);
 
+int getline(char **pstring, size_t *size, FILE *stream);
 stack_t *add_dnodeint(stack_t **head, const int n);
 void push(stack_t **stack, int unsigned line, char *arg);
 void pall(stack_t **stack, unsigned int lineNum);
 void pint(stack_t **stack, unsigned int lineNum);
-void pop(stack_t **stack, int unsigned lineNum);
-void swap(stack_t **stack, int unsigned lineNum);
-void add(stack_t **stack, int unsigned lineNum);
+void pop(stack_t **s, unsigned int l);
+void swap(stack_t **stack, int unsigned l);
+void add(stack_t **stack, int unsigned l);
 void nop(stack_t **stack, int unsigned lineNum);
-ssize_t getline(char **pstring, size_t *size, FILE *stream);
+
 
 
 

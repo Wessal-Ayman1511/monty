@@ -1,7 +1,7 @@
 #include "LIFO_FIFO.h"
 /**
  * accesFile- read file linely
- * @openFile: input
+ * @file: input
  * Return: void
 */
 void accesFile(FILE *file)
@@ -57,9 +57,13 @@ void getFunc(char *opcode, stack_t **ptrStack, int line, FILE *f)
 	int i = 0;
 	instruction_t codes[] = {
 				{"pall", pall},
-				{"pint", pint}
+				{"pint", pint},
+				{"pop", pop},
+				{"add", add},
+				{"swap", swap},
+				{"nop", nop}
 				};
-	while (i < 2)
+	while (i < 6)
 	{
 		if (strcmp(codes[i].opcode, opcode) == 0)
 		{
