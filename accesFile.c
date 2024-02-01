@@ -56,9 +56,10 @@ void getFunc(char *opcode, stack_t **ptrStack, int line, FILE *f)
 {
 	int i = 0;
 	instruction_t codes[] = {
-				{"pall", pall}
+				{"pall", pall},
+				{"pint", pint}
 				};
-	while (i < 1)
+	while (i < 2)
 	{
 		if (strcmp(codes[i].opcode, opcode) == 0)
 		{
