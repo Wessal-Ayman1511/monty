@@ -1,5 +1,5 @@
-#ifndef STACKS_QUEUES
-#define STACKS_QUEUES
+#ifndef MONTY_H
+#define MONTY_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -52,23 +52,4 @@ void pop(stack_t **s, unsigned int l);
 void swap(stack_t **stack, int unsigned l);
 void add(stack_t **stack, int unsigned l);
 void nop(stack_t **stack, int unsigned lineNum);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #endif
