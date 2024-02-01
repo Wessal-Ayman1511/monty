@@ -4,7 +4,7 @@
  * @openFile: input
  * Return: void
 */
-void accesFile(FILE *openFile)
+void accesFile(FILE *file)
 {
 	unsigned int lineNum = 0;
 	size_t size = 0;
@@ -13,7 +13,7 @@ void accesFile(FILE *openFile)
 	char *op = NULL;
 	stack_t *stack = NULL;
 
-	while (getline(&lineBuff, &size, openFile) != -1)
+	while (getline(&lineBuff, &size, file) != -1)
 	{
 		lineNum++;
 		op = strtok(lineBuff, " \n");
@@ -31,13 +31,13 @@ void accesFile(FILE *openFile)
 				fprintf(stderr, "L%d: usage: push integer\n", lineNum);
 				free(op);
 				freeStack(&stack);
-				fclose(openFile);
+				fclose(file);
 				exit(EXIT_FAILURE);
 			}
 		}
 		else
 		{
-			getFunc(op, &stack, lineNum, openFile);
+			getFunc(op, &stack, lineNum, file);
 		}
 
 	}
@@ -56,8 +56,7 @@ void getFunc(char *opcode, stack_t **ptrStack, int line, FILE *f)
 {
 	int i = 0;
 	instruction_t codes[] = {
-				{"pall", pall},
-				{"pint", pint}
+				{"pall", pall}
 				};
 	while (i < 1)
 	{

@@ -11,6 +11,7 @@
 #include <stdbool.h>
 
 
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -54,6 +55,7 @@ void pop(stack_t **stack, int unsigned lineNum);
 void swap(stack_t **stack, int unsigned lineNum);
 void add(stack_t **stack, int unsigned lineNum);
 void nop(stack_t **stack, int unsigned lineNum);
+ssize_t getline(char **pstring, size_t *size, FILE *stream);
 
 
 
