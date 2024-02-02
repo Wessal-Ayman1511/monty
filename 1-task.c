@@ -1,5 +1,4 @@
 #include "monty.h"
-#define _GNU_SOURCE
 /**
  * pint - print top
  * @stack: pointer to the head node pointer of stack
