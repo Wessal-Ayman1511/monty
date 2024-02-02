@@ -38,12 +38,12 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+
+
 void freeStack(stack_t **head);
 void getFunc(char *opcde, stack_t **ptrStack, int line, FILE *f);
 void accesFile(FILE *openFile);
 bool validArg(char *token);
-
-int getline(char **pstring, size_t *size, FILE *stream);
 stack_t *add_dnodeint(stack_t **head, const int n);
 void push(stack_t **stack, int unsigned line, char *arg);
 void pall(stack_t **stack, unsigned int lineNum);
@@ -52,4 +52,8 @@ void pop(stack_t **s, unsigned int l);
 void swap(stack_t **stack, int unsigned l);
 void add(stack_t **stack, int unsigned l);
 void nop(stack_t **stack, int unsigned lineNum);
+void freeStack(stack_t **head);
+void getFunc(char *opcde, stack_t **ptrStack, int line, FILE *f);
+void accesFile(FILE *openFile);
+bool validArg(char *token);
 #endif
