@@ -51,6 +51,11 @@ void pint(stack_t **stack, unsigned int lineNum);
 void pop(stack_t **s, unsigned int l);
 void swap(stack_t **stack, int unsigned l);
 void add(stack_t **stack, int unsigned l);
+void sub(stack_t **stack, int unsigned l);
+void mul(stack_t **stack, int unsigned l);
+void div(stack_t **stack, int unsigned l);
+void mod(stack_t **stack, int unsigned l);
+
 void nop(stack_t **stack, int unsigned lineNum);
 void freeStack(stack_t **head);
 void getFunc(char *opcde, stack_t **ptrStack, int line, FILE *f);
